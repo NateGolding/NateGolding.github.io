@@ -8,6 +8,8 @@
 
 <body style="text-align:center;" id="body">
 
+<h1> "Value is " + input </h1>
+
 <form oninput="foobar()" method="POST">
     <input type="text" id="data" value="NULL">
 </form>
@@ -15,9 +17,10 @@
 </body>
 
 <script>
+    var input;
+
     function foobar(){
-        var input = document.getElementById("data");
-        alert(input.value);
+        input = document.getElementById("data");
     }
 </script>
 
